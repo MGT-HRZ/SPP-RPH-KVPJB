@@ -91,6 +91,7 @@ body {
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://meimluonline.github.io/images.meimlu.github.io/back-image/kvpjb_edit_1.jpg);
     background-position: center;
+    background-attachment: fixed;
     background-size: 1850px;
     position: absolute;
 }
