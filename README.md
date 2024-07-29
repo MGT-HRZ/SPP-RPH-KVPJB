@@ -1,5 +1,5 @@
 # Setup
-Request for env.php from this email spideyweb320@gmail.com
+Request from this email (spideyweb320@gmail.com) for the env.rar password
 
 # SPP-RPH System
 Overview
