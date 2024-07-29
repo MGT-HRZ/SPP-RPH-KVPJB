@@ -1,0 +1,609 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+    font-family: myfont;
+    src: url("../../fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+* {
+    font-family: myfont;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #12102f;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+.place1 {
+    margin-top: 5%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.place2 {
+    margin-top: 3%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+/* NAVBAR PAGE */
+
+#Nav-align-sec1 {
+    /* margin: auto; */
+}
+
+#kvperd {
+    width: 200px;
+    height: 80px;
+    margin-left: 0%;
+    cursor: pointer;
+
+    /* Cannot drag image */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    user-select: none;
+}
+
+#jtm {
+    width: 125px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#adjt-navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 3;
+} 
+
+#nav-corner {
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+#hamburger {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo-align {
+    margin-left: 18%;
+}
+
+#nav-dashboard {
+    margin-bottom: 10%;
+}
+
+/* NAVBAR PAGE */
+
+/* MAIN PAGE */
+
+#date-time-day {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#day {
+    margin-left: 50px;
+}
+
+#clockdate {
+    margin-right: 50px;
+}
+
+.date-time-day_slot {
+    margin-top: 6%;
+}
+
+.date-time-day_slot-mobile {
+    display: none;
+}
+
+.sec_gridcard {
+    margin-top: 3%;
+}
+
+#grid-adjt {
+    margin-bottom: 3%;
+    transition: 0.5s ease-in-out;
+}
+
+#grid-adjt:hover {
+    transform: scale(1.05);
+}
+
+.gridcard {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#card_title {
+    font-weight: bold;
+}
+
+/* MAIN PAGE */
+
+/* BUTTON PAGE */
+
+#feedback, #logout {
+    margin-left: 5%;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* BUTTON PAGE */
+
+/* ABOUT US PAGE */
+
+.abtus {}
+
+#sec_card_title label {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.abtus_gridcard {
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 60%;
+    text-align: center;
+}
+
+#timestamp {
+    float: right;
+}
+
+#abtus-grid-adjt {
+    margin-bottom: 3%;
+    transition: 0.5s ease-in-out;
+}
+
+#abtus-grid-adjt:hover {
+    transform: scale(1.05);
+}
+
+.abtus_sub_gridcard {
+    margin: auto;
+    margin-bottom: 6%;
+    width: 90%;
+    text-align: center;
+}
+
+/* ABOUT US PAGE */
+
+/* LECTURER'S PROFILE PAGE */
+
+.place3 {
+    width: 85%;
+    margin: auto;
+    margin-top: 3%;
+    padding-bottom: 50px;
+}
+
+#lecpro-grid-adjt {
+    margin-bottom: 3%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#lecpro-grid-adjt:hover {
+    transform: scale(1.03);
+}
+
+#lecpro-pic {
+    min-height: 300px;
+    pointer-events: none;
+}
+
+#lecpro-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+#lecpro-position {
+    text-align: center;
+}
+
+#lecpro-pic-modal {
+    pointer-events: none;
+}
+
+#lecpro-name-modal {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+#lecpro-content-modal {
+    font-size: small;
+}
+
+/* LECTURER'S PROFILE PAGE */
+
+/* DASHBOARD PAGE */
+
+#tbl-header {
+    text-align: center;
+}
+
+#row-content {
+    text-align: center;
+}
+
+.pop-ups {
+    margin: auto;
+    margin-top: 1%;
+    width: 90%;
+}
+
+.welcome-log {
+    margin: auto;
+    margin-top: 1%;
+    width: 90%;
+}
+
+#main-panel {
+    margin-top: -1%;
+}
+
+#gridRadioslabel {
+    margin-top: 5px;
+}
+
+/* TOP NAVBAR */
+
+#search {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+#btn-search {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* TOP NAVBAR */
+
+/* CUSTOMIZATION NAVBAR */
+
+#custom_nav {
+    margin: auto;
+}
+
+#block {
+    display: none;
+}
+
+#name-list{
+    cursor: pointer;;
+}
+
+#name-list:hover {
+    color: #0d6efd;
+}
+
+/* CUSTOMIZATION NAVBAR */
+
+/* WELCOME NOTIFY */
+
+#modal-welcome-dialog {
+    border-radius: 40px;
+}
+
+/* WELCOME NOTIFY */
+
+/* GENERAL FORM */
+
+#modal-form {
+    border-radius: 25px;
+}
+
+/* GENERAL FORM */
+
+/* CASE */
+
+#box-case {
+    transition: 0.5s ease-in-out;
+}
+
+#box-case:hover {
+    transform: scale(1.03);
+}
+
+/* CASE */
+
+/* ABOUT */
+
+/* Add custom CSS for flipped icon */
+.rotate-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-icon.collapsed {
+    transform: rotate(180deg);
+}
+
+/* ABOUT */
+
+/* DASHBOARD PAGE */
+
+/* UPDATE DEFAULT PASSWORD PAGE */
+
+#update_def_pass_card {
+    margin: auto;
+    width: 90%;
+    border-radius: 40px;
+}
+
+#update_def_pass_card_head {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    overflow: hidden;
+}
+
+/* UPDATE DEFAULT PASSWORD PAGE */
+
+/* FEEDBACK PAGE */
+
+#feedback_form {
+    border-radius: 40px;
+}
+
+/* FEEDBACK PAGE */
+
+/* FOOTER PAGE */
+
+#memory {
+    font-size: 11px;
+    margin-top: -10px;
+}
+
+/* FOOTER PAGE */
+
+@media only screen and (max-width: 768px) { /* MOBILE VIEW */
+
+    /* NAVBAR PAGE */
+
+    /* #Nav-align-sec2  {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    } */
+
+    #kvperd {
+        margin-left: 20%;
+        width: 100px;
+        height: 40px;
+    }
+    
+    #jtm {
+        width: 62.5px;
+        height: 35px;
+    }
+
+    #adjt-navbar {
+        margin-bottom: 15%;
+    } 
+
+    #logo-align {
+        margin-left: 5%;
+    }
+
+    #hamburger {
+        margin-left: -10%;
+    }
+
+    /* NAVBAR PAGE */
+
+    /* MAIN PAGE */
+
+    .date-time-day_slot {
+        display: none;
+    }
+
+    .date-time-day_slot-mobile {
+        display: block;
+    }
+
+    #day-mobile {
+        color: #575757;
+        font-size: smaller;
+    }
+
+    #clockdate-mobile {
+        color: #575757;
+        font-size: smaller;
+    }
+
+    /* MAIN PAGE */
+
+    /* BUTTON PAGE */
+
+    #feedback, #logout {
+        margin-left: 5%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* BUTTON PAGE */
+
+    /* ABOUT US PAGE */
+
+    #sec_card_title label {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .abtus_gridcard {
+        margin-top: 15%;
+        margin-bottom: 15%;
+        width: 90%;
+    }
+
+    .abtus_sub_gridcard {
+        margin-bottom: 15%;
+    }
+
+    /* ABOUT US PAGE */
+
+    /* LECTURER'S PROFILE PAGE */
+
+    .place3 {
+        width: 70%;
+    }
+
+    #lecpro-pic-modal {
+        border-radius: 5px;
+    }
+
+    /* LECTURER'S PROFILE PAGE */
+
+    /* DASHBOARD PAGE */
+
+    /* List */
+    .pop-ups {
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    .welcome-log {
+        margin-top: 3%;
+        width: 90%;
+    }
+
+    #main-panel {
+        margin-top: -15%;
+    }
+
+    #entire-tbl {
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+        z-index: 2;
+        overflow-x: auto;
+        overflow-y: hidden;
+        /* white-space: nowrap; */
+    }
+
+    #btn-to-top {
+        margin-bottom: 15%;
+    }
+    /* List */
+
+    /* Add Form */
+    #add-form {
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+    }
+    /* Add Form */
+
+    /* Update Form */
+    #update-form {
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+    }
+    /* Update Form */
+
+    /* DASHBOARD PAGE */
+
+    /* FEEDBACK PAGE */
+
+    #feedback_form {
+        margin: auto;
+        width: 90%;
+    }
+
+    /* FEEDBACK PAGE */
+
+    /* FOOTER PAGE */
+
+    #footer-space {
+        padding-top: 20%;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    /* FOOTER PAGE */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  /* IPAD, TABLET VIEW */
+    #nav-home, #nav-abtus, #nav-dashboard {
+        
+    }
+
+    /* NAVBAR PAGE */
+
+    #logo-align {
+        margin-left: 12.5%;
+    }
+
+    /* NAVBAR PAGE */
+
+    /* MAIN PAGE */
+
+    .date-time-day_slot {
+        margin-top: 12%;
+    }
+
+    /* MAIN PAGE */
+
+    /* DASHBOARD PAGE */
+
+    #btn-to-top {
+        margin-bottom: 7%;
+    }
+
+    /* DASHBOARD PAGE */
+
+    /* UPDATE DEFAULT PASSWORD PAGE */
+
+    #update_def_pass_card {
+        margin-left: -50%;
+        width: 200%;
+    }
+
+    /* UPDATE DEFAULT PASSWORD PAGE */
+
+    /* FEEDBACK PAGE */
+
+    #feedback_form {
+        margin-left: auto !important;
+        width: 100% !important;
+    }
+
+    /* FEEDBACK PAGE */
+
+}
