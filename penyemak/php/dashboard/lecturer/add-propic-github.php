@@ -1,5 +1,7 @@
 <?php
 
+    include_once '../../../../env.php';
+
     $up_file = $_FILES['file'];
 
     if (!empty($up_file['name']) && $up_file['size'] < 300000) {
@@ -30,9 +32,9 @@
                 // Check if the file size is within the limit
                 if ($up_file_size < 300000) {
 
-                    $githubUsername = '';
-                    $repositoryName = '';
-                    $personalAccessToken = '';
+                    $githubUsername = $GITHUB_USER;
+                    $repositoryName = $GITHUB_REPO;
+                    $personalAccessToken = $GITHUB_ACCESS_TOKEN;
 
                     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $subdirectory = 'lecturer-profile';

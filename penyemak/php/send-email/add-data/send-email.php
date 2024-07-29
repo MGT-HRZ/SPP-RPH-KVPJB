@@ -40,7 +40,9 @@
 
     //  Gmail address and gmail app password
 
-    require_once '../../../../email/credentials/email-cred.php';
+    include_once '../../../../email/credentials/email-cred.php';
+
+    mailCred('penyemak');
 
     $gmail_Receiver = $receiver_email;
     $gmail_Receiver_message = "SPP-RPH : ".$sender_name."'s RPH SUBMISSION FOR ".$date."!";

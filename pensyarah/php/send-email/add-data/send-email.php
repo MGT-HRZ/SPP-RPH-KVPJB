@@ -42,6 +42,8 @@
 
     require_once '../../../email/credentials/email-cred.php';
 
+    mailCred('pensyarah');
+
     $gmail_Receiver = $receiver_email;
     $gmail_Receiver_message = "SPP-RPH : ".$sender_name."'s RPH SUBMISSION FOR ".$date."!";
 

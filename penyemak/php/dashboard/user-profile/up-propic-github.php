@@ -1,9 +1,9 @@
 <?php
+    
+    include_once '../../../../env.php';
 
     $up_file = $_FILES['file'];
     $pro_image  = $_POST['pro_image'];
-
-    
 
     if (!empty($up_file['name']) && $up_file['size'] < 300000) {
 
@@ -58,9 +58,9 @@
                             return null;
                         }
 
-                        $githubUsername = '';
-                        $repositoryName = '';
-                        $personalAccessToken = '';
+                        $githubUsername = $GITHUB_USER;
+                        $repositoryName = $GITHUB_REPO;
+                        $personalAccessToken = $GITHUB_ACCESS_TOKEN;
 
                         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             $subdirectory = 'lecturer-profile';
