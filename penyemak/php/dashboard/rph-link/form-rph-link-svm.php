@@ -50,9 +50,7 @@
                     <div class="col-6">
                         <label class="form-label">Week</label>
                         <select class="form-select rounded-pill" name="minggu" required>
-                            <option id="block" value="">Select Week</option>
-                            <option value="">==== SVM ====</option>
-                                <?php svmListWeek(); ?>
+                            <?php svmListWeek(); ?>
                         </select>
                     </div>
 
