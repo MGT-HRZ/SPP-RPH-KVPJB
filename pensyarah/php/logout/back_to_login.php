@@ -24,11 +24,31 @@
             /* 5 */    "../../../../../",
         );
 
-        //  Redirect the choosen directory
-        $back_to_main = header("Location: ".$bck_dir[$dir].$file_name."?cannot");
-        
-        //  Output assign the directory
-        echo $back_to_main;
+        // Determine the protocol (HTTP/HTTPS)
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https://' : 'http://';
+
+        // Construct the base URL
+        $base_url = $protocol.$_SERVER['HTTP_HOST'];
+
+        // Handle redirection based on environment
+        if ($base_url === 'http://localhost') {
+            header("Location: {$base_url}/pensyarah/index.php?not-allowed");
+        } elseif ($base_url === 'http://localhost:3000') {
+            header("Location: {$base_url}/pensyarah/index.php?not-allowed");
+        } elseif ($base_url === 'http://localhost') {
+            header("Location: {$base_url}/SPP-RPH-KVPJB/pensyarah/index.php?not-allowed");
+        } elseif ($base_url === 'http://localhost:3000') {
+            header("Location: {$base_url}/SPP-RPH-KVPJB/pensyarah/index.php?not-allowed");
+        } elseif ($base_url === 'https://') {
+            header("Location: https://");
+        } else {
+            // Handle other general local web servers or production environments
+            // For example, redirect to a default or relative path
+            header("Location: /pensyarah/index.php");
+        }
+
+        // Terminate the script after redirection
+        exit;
 
     }
 
