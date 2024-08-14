@@ -1,5 +1,22 @@
 # Setup
-Request from this email (spideyweb320@gmail.com) for the env.rar password
+1. Request from this email (spideyweb320@gmail.com) for the env.rar password.
+2. Use Git / GitHub Desktop to clone the project to local repository : use => (**git pull <repo_link>** or **git clone <repo_link>**).
+3. In terminal use **git init** to initailize git use.
+4. Turn on Apache & MySQL in xampp's Control Panel.
+5. Open PhpMyAdmin dashboard and import **spp_rph.sql** file.
+6. Install PHP Server extension in VS Code [extension link](https://marketplace.visualstudio.com/items?itemName=brapifra.phpserver).
+7. Find main index.php. Right click a run server (Should run under port 3000).
+8. If cannot go to [localhost](http://localhost/) and run the project.
+
+# Languages Used
+1. HTML
+2. CSS
+3. JAVASCRIPT
+4. PHP
+5. MYSQL
+
+# Services
+1. PhpMailer
 
 # SPP-RPH System
 Overview
